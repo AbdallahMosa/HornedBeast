@@ -2,6 +2,7 @@ import React from "react";
 import HornedBeast from "./HornedBeast";
 // import Cat from './assets/cat.jpg'
 import JSON from "./Data.json";
+import Row from 'react-bootstrap/Row';
 
   const allData =JSON.map(element =>
         <HornedBeast  
@@ -18,7 +19,10 @@ import JSON from "./Data.json";
         class Main extends React.Component{
 
    render(){
-        return(allData )
+        return(
+            
+            <Row xs={1} md={3} className="g-4">
+            {allData} </Row>)
             // <div>
         //         {/* <HornedBeast tital='Cat' imageUrl={Cat} description ='a pet and cute animal '/> */}       
         /* // </div> */
