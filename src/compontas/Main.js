@@ -11,6 +11,7 @@ import JSON from "./Data.json";
             Des = {element.description}
             Horne = {element.horns}
             Name ={element.keyword}
+            // new 
         /> 
   )
   
