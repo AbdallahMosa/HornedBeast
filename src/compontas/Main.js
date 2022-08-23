@@ -12,6 +12,7 @@ import Row from 'react-bootstrap/Row';
             Des = {element.description}
             Horne = {element.horns}
             Name ={element.keyword}
+            // new 
         /> 
   )
   
