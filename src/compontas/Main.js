@@ -1,10 +1,10 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
 // import Cat from './assets/cat.jpg'
-import JSON from "./Data.json";
+// import JSON from "./Data.json";
 import Row from 'react-bootstrap/Row';
 
-  const allData =JSON.map(element =>
+  const allData =this.props.JSON.map(element =>
         <HornedBeast  
             Title = {element.title}
             ID = {element._id}
