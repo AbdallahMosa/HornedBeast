@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Col from 'react-bootstrap/Col';
+import { Button } from "react-bootstrap";
+
 
 
 class HornedBeast extends React.Component {
@@ -34,13 +36,18 @@ class HornedBeast extends React.Component {
             onClick={this.incremantNum}
           />
           <Card.Body>
-            <Card.Title>{this.props.tital}</Card.Title>
+            <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
+       
               {this.props.Des}
               <div>Number : {this.state.Number}</div>
               <div>number of horns: {this.props.Horne}</div>
               <div>The name : {this.props.Name}</div>
             </Card.Text>
+            <Button
+            onClick={() => {
+              this.props.findBeast(this.props.title); }}>Select</Button>
+
           </Card.Body>
         </Card>
       </Col>
