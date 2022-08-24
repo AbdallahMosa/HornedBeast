@@ -5,6 +5,14 @@ import Main from "./compontas/Main";
 import JSON from "./compontas/Data.json"
 import "bootstrap/dist/css/bootstrap.min.css";
 import SelectedBeast from "./compontas/SelectedBeast";
+import Form from "./compontas/Form";
+
+// let oneHorns = JSON.filter(element => {
+//     return(element.horns ===1)})
+
+//     let twoHorns = JSON.filter(element => {
+//         return(element.horns ===2)})
+
 
 class App extends React.Component {
     constructor (props) {
@@ -12,13 +20,13 @@ class App extends React.Component {
     this.state={
       show: false,
       select: {}
-    // id : 0 ,
-    //  name : "",
-    // title : "",
-    // img : "",
-    // dis : "",
-    // horns : ""
+
     };
+
+
+
+
+
    
   }
   findBeast = (title) => {
@@ -27,12 +35,7 @@ class App extends React.Component {
       this.setState({
         show: true,
         select: slectElement,
-        // name : name,
-        // id : id,
-        // horns: horns,
-        // tit :  tit,
-        // dis : dis,
-        // img : img ,
+    
       });
     };
 
@@ -47,7 +50,8 @@ class App extends React.Component {
     return (
       <div>
         <Head />
-        <Main JSON={JSON} findBeast={this.findBeast} />
+        <Form  />
+        <Main JSON={JSON} findBeast={this.findBeast}  />
         <Foot />
         <SelectedBeast show={this.state.show} handleClose={this.handleClose}  select={this.state.select}/>
         
