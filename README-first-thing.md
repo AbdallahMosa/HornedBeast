@@ -12,3 +12,21 @@ we add a compontas
 4- added a main compontas that contains HornedBeast and props ..
 <br>
 ======================------------===============
+<br>
+
+<br>
+1- added boostrab card inside HornedBeast compont 
+<br>
+2- create constructor and incremant function 
+<br>
+3- added footer and hader stlye from bootstrap 
+<br>
+<br><br>
+======================------------===============
+<br>
+1- added Modal from the Bootsrap 
+<br>
+<br>
+======================------------===============
+<br>
+1- added Form to serach  and filter The horns  
