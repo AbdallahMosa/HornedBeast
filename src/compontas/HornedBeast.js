@@ -29,7 +29,7 @@ class HornedBeast extends React.Component {
 
       // </div>
       <Col>
-        <Card style={{ width: "18rem" }} class="card">
+        <Card style={{ width: "18rem" , backgroundColor : "#2844bf57" }} class="card">
           <Card.Img
             variant="top"
             src={this.props.Img}

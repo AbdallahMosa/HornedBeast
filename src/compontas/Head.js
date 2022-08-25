@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 class Head extends React.Component {
   render() {
     return (
-      
+      <div>
         <Nav defaultActiveKey="/home" as="ul">
           <Nav.Item as="li">
             <Nav.Link href="/home">Home </Nav.Link>
@@ -18,7 +18,8 @@ class Head extends React.Component {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-      
+        <div style={{textAlign: "center", color: "rgb(10 152 226)",}}><h1>ANIMAL APP</h1></div>
+      </div>
     );
   }
 }
